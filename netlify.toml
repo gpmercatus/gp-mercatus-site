@@ -2,6 +2,11 @@
   command = "ng build --configuration production"
   publish = "dist/gp-mercatus-site"
 
+[[plugins]]
+  package = "@netlify/angular-runtime"
+  [plugins.inputs]
+  disabled = true
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
