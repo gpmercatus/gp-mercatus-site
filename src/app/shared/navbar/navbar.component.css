@@ -30,6 +30,7 @@
   font-size: 2rem;
   display: none;
   cursor: pointer;
+  color: black;
 }
 
 .nav-links {
@@ -57,7 +58,7 @@
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #0a0a23;
+    background-color: white;
     margin-top: 10px;
   }
 
