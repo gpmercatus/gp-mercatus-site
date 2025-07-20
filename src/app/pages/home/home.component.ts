@@ -13,8 +13,8 @@ export class HomeComponent {
   images = [
     'assets/images/111.jpg',
     'assets/images/222.avif',
-    'assets/images/333.avif',
-    'assets/images/444.jpeg',
+    'assets/images/333.jpg',
+    'assets/images/444.jpg',
   ];
 
   currentSlide = 0;
