@@ -1,0 +1,55 @@
+<div class="page-wrapper">
+<section class="section contact-section">
+  <h2>Contact Us</h2>
+
+  <div class="contact-wrapper">
+    <!-- ℹ️ Left: Company Info -->
+    <div class="contact-info">
+      <p>
+        <strong>GP Mercatus – Advertising Solutions</strong><br />
+        A Unit of STUDYSPOT INDIA PVT LTD (ISO IAF Certified)
+      </p>
+
+      <p>
+        📍 RZ-7A/18, Raj Nagar II, Old Mehrauli Road, New Delhi – 110077
+      </p>
+      <p>
+        📞 +91-93110XXXXX<br />
+        ✉️ support&#64;gpmercatus.com<br />
+        🌐 <a href="https://www.gpmercatus.com" target="_blank">www.commingsoon.com</a><br />
+        📸 <a href="https://instagram.com/gpmercatus" target="_blank">&#64;gpmercatus</a> (Instagram/Facebook)
+      </p>
+    </div>
+
+    <!-- Divider -->
+    <div class="vertical-divider">|</div>
+
+    <!-- 📝 Right: Contact Form -->
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+      <div class="form-group">
+        <label>Your Name</label>
+        <input formControlName="name" type="text" placeholder="Enter your name" required />
+      </div>
+
+      <div class="form-group">
+        <label>Your Email</label>
+        <input formControlName="email" type="email" placeholder="Enter your email" required />
+      </div>
+
+      <div class="form-group">
+        <label>Subject</label>
+        <input formControlName="subject" type="text" placeholder="Message subject" required />
+      </div>
+
+      <div class="form-group">
+        <label>Message</label>
+        <textarea formControlName="message" rows="5" placeholder="Write your message here..." required></textarea>
+      </div>
+
+      <button type="submit" [disabled]="contactForm.invalid">Send Message</button>
+
+      <p *ngIf="submitted" class="success-msg">Your message has been sent!</p>
+    </form>
+  </div>
+</section>
+</div>

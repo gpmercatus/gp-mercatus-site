@@ -1,0 +1,15 @@
+<nav class="navbar">
+  <div class="logo">
+    <img src="assets/gp logo 2-01.png" alt="GP Mercatus Logo" />
+    <span>GP Mercatus</span>
+  </div>
+
+  <div class="hamburger" (click)="toggleMenu()">&#9776;</div>
+
+  <div class="nav-links" [class.open]="menuOpen">
+    <a href="#home" (click)="closeMenu()">Home</a>
+    <a href="#about" (click)="closeMenu()">Who We Are</a>
+    <a href="#services" (click)="closeMenu()">Services</a>
+    <a href="#contact" (click)="closeMenu()">Contact</a>
+  </div>
+</nav>
